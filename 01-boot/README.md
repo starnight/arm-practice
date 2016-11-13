@@ -6,7 +6,7 @@ The code of this practice refers to [Hello world for bare metal ARM using QEMU](
 Besides, according to the introduction of the SoC [BCM8236](https://www.raspberrypi.org/documentation/hardware/raspberrypi/bcm2836/README.md) on Raspberry Pi 2, it is said that *"The underlying architecture in BCM2836 is identical to BCM2835. The only significant difference is the removal of the ARM1176JZF-S processor and replacement with a quad-core Cortex-A7 cluster."*.  Therefore, I read the [BCM2835 ARM Peripherals](https://www.raspberrypi.org/documentation/hardware/raspberrypi/bcm2835/BCM2835-ARM-Peripherals.pdf) for getting the peripherals information.
 
 Howerver, there are still some other difference between the SoC of Raspberry Pi 1 and 2.
-For example, Peripheral Base Address from 0x20000000 for Raspberry Pi 1 to 0x3F000000 for Raspberry Pi 2, discussed in [Trying Bare Metal on Raspberry Pi 2](https://www.raspberrypi.org/forums/viewtopic.php?f=72&t=98904).
+For example, _Peripheral Base Address is moved_ from 0x20000000 for Raspberry Pi 1 to _0x3F000000_ for Raspberry Pi 2, discussed in [Trying Bare Metal on Raspberry Pi 2](https://www.raspberrypi.org/forums/viewtopic.php?f=72&t=98904).
 
 For Qemu emulator, after reset, it starts form 0x10000 instead of 0x8000 which is mentioned in the bottom of [Raspberry Pi Bare Bones](http://wiki.osdev.org/Raspberry_Pi_Bare_Bones).
 
